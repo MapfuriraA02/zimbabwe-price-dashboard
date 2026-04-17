@@ -39,7 +39,7 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Predict next 3 months
-future_dates = pd.date_range(start=filtered["Date"].max(), periods=4)[1:]
+future_dates = pd.date_range(start=filtered["Date"].max(), periods=4, freq='MS')[1:]
 future_ordinals = np.array([d.toordinal() for d in future_dates]).reshape(-1, 1)
 
 predictions = model.predict(future_ordinals)
