@@ -18,6 +18,5 @@ This project analyzes and visualizes price trends of essential goods in Zimbabwe
 1. Clone the repository
 2. Navigate to the project folder
 3. Run:
-
 ```bash
 streamlit run app.py
