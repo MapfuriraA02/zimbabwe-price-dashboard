@@ -28,10 +28,10 @@ filtered = df[df["Item"]==item]
 fig, ax = plt.subplots()
 ax.plot(filtered["Date"], filtered["Price"], marker='o')
 ax.set_title(f"{item} Price Trend")
-ax.xticks(rotation=45, ha='right')
+plt.xticks(rotation=45, ha='right')
 ax.set_ylabel("Price")
 ax.set_xlabel("Date")
-ax.tight_layout()
+plt.tight_layout()
 
 st.pyplot(fig)
 
