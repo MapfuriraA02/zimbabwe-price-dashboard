@@ -83,7 +83,5 @@ st.write(pred_df)
 
 st.subheader("Highest Price Recorded")
 st.write(filtered.loc[filtered["Price"].idxmax()])
-
-st.subheader("Future Price Predictions")
-st.write(pred_df)
+# ln [:]
 
