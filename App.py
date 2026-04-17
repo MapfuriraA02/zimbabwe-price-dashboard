@@ -7,6 +7,8 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+import numpy as np
 
 
 # In[10]:
