@@ -20,3 +20,6 @@ This project analyzes and visualizes price trends of essential goods in Zimbabwe
 3. Run:
 ```bash
 streamlit run app.py
+
+## 🌍 Live App
+[Click here to view the dashboard](https://zimbabwe-price-dashboard-lgfwry84hwglqz4vijgwfx.streamlit.app)
