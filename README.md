@@ -26,4 +26,5 @@ streamlit run app.py
 
 ## Preview
 
-![Dashboard Screenshot]("screenshot(2).png", "screenshot(1).png","screenshot(3).png")
+![Dashboard Screenshot](<img src="screenshot(1).png" width="600">,
+<img src="screenshot(2).png" width="600">, <img src="screenshot(3).png" width="600">)
