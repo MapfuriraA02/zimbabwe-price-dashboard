@@ -115,7 +115,7 @@ st.pyplot(fig)
 # INSIGHT MESSAGE
 # -------------------------------
 if latest["Price"] > avg_price:
-    st.warning("Current price is above average")
+    st.warning("⚠️ Current price is above average")
 else:
     st.success("Current price is within normal range")
 
@@ -138,11 +138,11 @@ st.dataframe(filtered)
 # -------------------------------
 # PREDICTIONS TABLE
 # -------------------------------
-st.subheader("🔮 Future Price Predictions")
+st.subheader("Future Price Predictions")
 st.dataframe(pred_df)
 
 # -------------------------------
 # HIGHEST PRICE
 # -------------------------------
-st.subheader("Highest Price Recorded")
+st.subheader("📌 Highest Price Recorded")
 st.write(filtered.loc[filtered["Price"].idxmax()])
