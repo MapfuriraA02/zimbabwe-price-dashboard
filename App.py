@@ -12,14 +12,13 @@ import numpy as np
 # -------------------------------
 st.set_page_config(
     page_title="Zimbabwe Price Dashboard",
-    page_icon="📊",
     layout="wide"
 )
 
 # -------------------------------
 # TITLE
 # -------------------------------
-st.title("📊 Zimbabwe Price Intelligence Dashboard")
+st.title("Zimbabwe Price Intelligence Dashboard")
 st.markdown("Track, analyze, and forecast price trends of essential goods.")
 
 # -------------------------------
@@ -116,16 +115,16 @@ st.pyplot(fig)
 # INSIGHT MESSAGE
 # -------------------------------
 if latest["Price"] > avg_price:
-    st.warning("⚠️ Current price is above average")
+    st.warning("Current price is above average")
 else:
-    st.success("✅ Current price is within normal range")
+    st.success("Current price is within normal range")
 
 st.markdown("---")
 
 # -------------------------------
 # SUMMARY STATISTICS
 # -------------------------------
-st.subheader("📊 Summary Statistics")
+st.subheader("Summary Statistics")
 st.dataframe(filtered.describe())
 
 # -------------------------------
@@ -133,7 +132,7 @@ st.dataframe(filtered.describe())
 # -------------------------------
 filtered['Change'] = filtered["Price"].diff()
 
-st.subheader("📉 Price Changes")
+st.subheader("Price Changes")
 st.dataframe(filtered)
 
 # -------------------------------
@@ -145,5 +144,5 @@ st.dataframe(pred_df)
 # -------------------------------
 # HIGHEST PRICE
 # -------------------------------
-st.subheader("📌 Highest Price Recorded")
+st.subheader("Highest Price Recorded")
 st.write(filtered.loc[filtered["Price"].idxmax()])
